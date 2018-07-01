@@ -1,0 +1,12 @@
+[environments]
+  [environments.development]
+    name = "vote"
+    namespace = "default"
+    wait = true
+    watch = false
+    watch-delay = 2
+    auto-connect = false
+    dockerfile = "Dockerfile"
+    chart = "charts/python"
+    registry = "beeprojects.azurecr.io"
+    override-ports = ["5000:80"]
